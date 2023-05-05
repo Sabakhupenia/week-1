@@ -14,8 +14,7 @@ def is_valid(s):
 
     for c in range(len(s)):
         if s[c].isdigit():
-            if not s[c:].isdigit():
-                if not s[c:].isdigit():
+            if not s[c:].isdigit()
                     return False
     for _ in s:
         if s in [","," ","!","?","."]:
