@@ -1,10 +1,19 @@
-camel = input("camelCase: ")
-snake =""
+def main():
+     camel = input("camelCase: ")
+     print("snake_case:", snakec(camel))
 
-for character in camel:
-    if character.isupper():
-         snake += "_" + character.lower()
-    else:
-         snake += character
+def snakec(camelCase):
+     characters =[]
+     for character in camelCase:
+          if character.isupper():
+               characters.append("_")
+               characters.append(character.lower())
+          else:
+               characters.append(character)
+     return"".join(characters)
 
-print("snake_case:", snake)
+
+
+main()
+
+
