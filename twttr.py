@@ -1,9 +1,15 @@
-txt=input("Input: ").strip()
 
-vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+def main():
+    txt=input("Input: ").strip()
+    print(ovowels(txt))
 
-for char in txt:
-    if char  in vowels:
-        txt = txt.replace(char, "")
-print(txt)
+def ovowels(txt):
+    vowels = ["a", "e", "i", "o", "u",]
+    for letter in txt:
+        if letter.lower() in vowels:
+            txt = txt.replace(letter, "")
+
+    return txt
+
+main()
 
